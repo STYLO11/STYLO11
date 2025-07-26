@@ -1,184 +1,117 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STYLO11 - Tienda Oficial</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #0f0f0f;
-      color: white;
-    }
-    header {
-      background-color: black;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      color: #00ff00;
-      margin: 0;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      background-color: black;
-      display: inline-block;
-      padding: 0.5rem 1rem;
-    }
-    .productos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
-    .producto {
-      background-color: #1a1a1a;
-      border-radius: 1rem;
-      padding: 1rem;
-      text-align: center;
-    }
-    .producto img {
-      width: 100%;
-      border-radius: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>STYLO11</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
+  <!-- Camisetas Blancas -->
+  <div class="card">
+    <img src="CAMISA BLANCA BEATBOT STYLONEON.png" alt="Camisa Blanca BEATBOT">
+    <h2>Camisa Blanca BEATBOT</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA BLANCA DRAGSTYLO STYLO NEON.png" alt="Camisa Blanca DRAGSTYLO">
+    <h2>Camisa Blanca DRAGSTYLO</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA BLANCA GRAFKID STYLONEON.png" alt="Camisa Blanca GRAFKID">
+    <h2>Camisa Blanca GRAFKID</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA BLANCA PINKRABBIT STYLONEON.png" alt="Camisa Blanca PINKRABBIT">
+    <h2>Camisa Blanca PINKRABBIT</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA BLANCA STYLONEON.png" alt="Camisa Blanca STYLONEON">
+    <h2>Camisa Blanca STYLONEON</h2>
+  </div>
 
-  <section class="hero" id="inicio">
-    <h2>Diseños urbanos con actitud joven</h2>
-  </section>
+  <!-- Camisetas Negras -->
+  <div class="card">
+    <img src="CAMISA NEGRA BEATBOT STYLONEON.png" alt="Camisa Negra BEATBOT">
+    <h2>Camisa Negra BEATBOT</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA NEGRA DRAGSTYLO STYLONEON.png" alt="Camisa Negra DRAGSTYLO">
+    <h2>Camisa Negra DRAGSTYLO</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA NEGRA GRAFKID STYLONEON.png" alt="Camisa Negra GRAFKID">
+    <h2>Camisa Negra GRAFKID</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA NEGRA PINKRABBIT.png" alt="Camisa Negra PINKRABBIT">
+    <h2>Camisa Negra PINKRABBIT</h2>
+  </div>
+  <div class="card">
+    <img src="CAMISA NEGRA STYLONEON.png" alt="Camisa Negra STYLONEON">
+    <h2>Camisa Negra STYLONEON</h2>
+  </div>
 
-  <section class="productos" id="productos">
-    <div class="producto">
-      <img src="CAMISA BLANCA BEATBOT STYLONEON.png" alt="Camisa Blanca BEATBOT" />
-      <p>Camisa Blanca BEATBOT</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA BLANCA DRAGSTYLO STYLO NEON.png" alt="Camisa Blanca DRAGSTYLO" />
-      <p>Camisa Blanca DRAGSTYLO</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA BLANCA GRAFKID STYLONEON.png" alt="Camisa Blanca GRAFKID" />
-      <p>Camisa Blanca GRAFKID</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA BLANCA PINKRABBIT STYLONEON.png" alt="Camisa Blanca PINKRABBIT" />
-      <p>Camisa Blanca PINKRABBIT</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA BLANCA STYLONEON.png" alt="Camisa Blanca STYLONEON" />
-      <p>Camisa Blanca STYLONEON</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA NEGRA BEATBOT STYLONEON.png" alt="Camisa Negra BEATBOT" />
-      <p>Camisa Negra BEATBOT</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA NEGRA DRAGSTYLO STYLONEON.png" alt="Camisa Negra DRAGSTYLO" />
-      <p>Camisa Negra DRAGSTYLO</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA NEGRA GRAFKID STYLONEON.png" alt="Camisa Negra GRAFKID" />
-      <p>Camisa Negra GRAFKID</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA NEGRA PINKRABBIT.png" alt="Camisa Negra PINKRABBIT" />
-      <p>Camisa Negra PINKRABBIT</p>
-    </div>
-    <div class="producto">
-      <img src="CAMISA NEGRA STYLONEON.png" alt="Camisa Negra STYLONEON" />
-      <p>Camisa Negra STYLONEON</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE AZUL DE STYLOX.png" alt="Hoodie Azul STYLOX" />
-      <p>Hoodie Azul STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE BEIGE DE STYLOX.png" alt="Hoodie Beige STYLOX" />
-      <p>Hoodie Beige STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE BLANCO DE STYLOX.png" alt="Hoodie Blanco STYLOX" />
-      <p>Hoodie Blanco STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE GRIS DE STYLOX.png" alt="Hoodie Gris STYLOX" />
-      <p>Hoodie Gris STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE MORADO DE STYLOX.png" alt="Hoodie Morado STYLOX" />
-      <p>Hoodie Morado STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE NEGRO DE STYLOX.png" alt="Hoodie Negro STYLOX" />
-      <p>Hoodie Negro STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE ROJO DE STYLOX.png" alt="Hoodie Rojo STYLOX" />
-      <p>Hoodie Rojo STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="HOODIE VERDE DE STYLOX.png" alt="Hoodie Verde STYLOX" />
-      <p>Hoodie Verde STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON AZUL DE HOODIE STYLOX.png" alt="Pantalón Azul STYLOX" />
-      <p>Pantalón Azul STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON BEIGE DE HOODIE STYLOX.png" alt="Pantalón Beige STYLOX" />
-      <p>Pantalón Beige STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON BLANCO DE HOODIE STYLOX.png" alt="Pantalón Blanco STYLOX" />
-      <p>Pantalón Blanco STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON GRIS DE HOODIE STYLOX.png" alt="Pantalón Gris STYLOX" />
-      <p>Pantalón Gris STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON MORADO DE HOODIE STYLOX.png" alt="Pantalón Morado STYLOX" />
-      <p>Pantalón Morado STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON NEGRO DE HOODIE STYLOX.png" alt="Pantalón Negro STYLOX" />
-      <p>Pantalón Negro STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON ROJO DE HOODIE STYLOX.png" alt="Pantalón Rojo STYLOX" />
-      <p>Pantalón Rojo STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="PANTALON VERDE DE HOODIE STYLOX.png" alt="Pantalón Verde STYLOX" />
-      <p>Pantalón Verde STYLOX</p>
-    </div>
-    <div class="producto">
-      <img src="SHORT BEIGE DE HOODIE STYLOX.png" alt="Short Beige STYLOX" />
-      <p>Short Beige STYLOX</p>
-    </div>
-  </section>
-</body>
-</html>
+  <!-- Hoodies STYLOX -->
+  <div class="card">
+    <img src="HOODIE AZUL DE STYLOX.png" alt="Hoodie Azul">
+    <h2>Hoodie Azul STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="HOODIE BEIGE DE STYLOX.png" alt="Hoodie Beige">
+    <h2>Hoodie Beige STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="HOODIE BLANCO DE STYLOX.png" alt="Hoodie Blanco">
+    <h2>Hoodie Blanco STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="HOODIE GRIS DE STYLOX.png" alt="Hoodie Gris">
+    <h2>Hoodie Gris STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="HOODIE MORADO DE STYLOX.png" alt="Hoodie Morado">
+    <h2>Hoodie Morado STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="HOODIE NEGRO DE STYLOX.png" alt="Hoodie Negro">
+    <h2>Hoodie Negro STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="HOODIE ROJO DE STYLOX.png" alt="Hoodie Rojo">
+    <h2>Hoodie Rojo STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="HOODIE VERDE DE STYLOX.png" alt="Hoodie Verde">
+    <h2>Hoodie Verde STYLOX</h2>
+  </div>
+
+  <!-- Pantalones STYLOX -->
+  <div class="card">
+    <img src="PANTALON AZUL DE HOODIE STYLOX.png" alt="Pantalón Azul">
+    <h2>Pantalón Azul STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="PANTALON BEIGE DE HOODIE STYLOX.png" alt="Pantalón Beige">
+    <h2>Pantalón Beige STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="PANTALON BLANCO DE HOODIE STYLOX.png" alt="Pantalón Blanco">
+    <h2>Pantalón Blanco STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="PANTALON GRIS DE HOODIE STYLOX.png" alt="Pantalón Gris">
+    <h2>Pantalón Gris STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="PANTALON MORADO DE HOODIE STYLOX.png" alt="Pantalón Morado">
+    <h2>Pantalón Morado STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="PANTALON NEGRO DE HOODIE STYLOX.png" alt="Pantalón Negro">
+    <h2>Pantalón Negro STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="PANTALON ROJO DE HOODIE STYLOX.png" alt="Pantalón Rojo">
+    <h2>Pantalón Rojo STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="PANTALON VERDE DE HOODIE STYLOX.png" alt="Pantalón Verde">
+    <h2>Pantalón Verde STYLOX</h2>
+  </div>
+  <div class="card">
+    <img src="SHORT BEIGE DE HOODIE STYLOX.png" alt="Short Beige">
+    <h2>Short Beige STYLOX</h2>
+  </div>
+</div>
