@@ -1,109 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STYLO11</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <style>
     body {
-      background-color: #111;
+      background-color: #0d0d0d;
       color: white;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
     }
-    header {
-      background-color: black;
-      text-align: center;
-      padding: 20px;
-    }
-    header h1 {
-      color: lime;
-      margin: 0;
-    }
-    nav {
+    .navbar {
+      background-color: #000;
+      padding: 1rem;
       display: flex;
-      justify-content: center;
-      background-color: black;
-      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
     }
-    nav a {
+    .navbar a {
       color: white;
-      margin: 0 15px;
-      text-decoration: none;
+      margin: 0 0.5rem;
       font-weight: bold;
     }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h2 {
-      background-color: black;
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 32px;
-    }
-    .productos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-    .producto {
-      background-color: #222;
-      border-radius: 10px;
-      padding: 15px;
-      margin: 10px;
-      width: 250px;
-      text-align: center;
-    }
     .producto img {
-      width: 100%;
-      border-radius: 8px;
+      height: 200px;
+      object-fit: contain;
     }
-    footer {
-      background-color: black;
+    .titulo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 2rem 0;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>STYLO11</h1>
+  <header class="navbar">
+    <h1 class="text-green-500 text-3xl font-extrabold">STYLO11</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-  <section class="hero" id="inicio">
-    <h2>Diseños urbanos con actitud joven</h2>
+
+  <section class="titulo">
+    Diseños urbanos con actitud joven
   </section>
 
-  <section class="productos" id="productos">
-    <div class="producto"><img src="camisa-blanca.png" alt="Camisa Blanca" /><h3>Camisa Blanca</h3></div>
-    <div class="producto"><img src="camisa-negra.png" alt="Camisa Negra" /><h3>Camisa Negra</h3></div>
-
-    <div class="producto"><img src="dragstylo.png" alt="Camisa DragStylo" /><h3>DragStylo</h3></div>
-    <div class="producto"><img src="pinkrabbit.png" alt="Camisa PinkRabbit" /><h3>PinkRabbit</h3></div>
-    <div class="producto"><img src="beatbot.png" alt="Camisa BeatBot" /><h3>BeatBot</h3></div>
-    <div class="producto"><img src="grafkid.png" alt="Camisa GrafKid" /><h3>GrafKid</h3></div>
-    <div class="producto"><img src="styloneon.png" alt="Camisa StyloNeon" /><h3>StyloNeon</h3></div>
-
-    <div class="producto"><img src="hoodie-negro.png" alt="Hoodie Negro" /><h3>Hoodie + Pantalón Negro</h3></div>
-    <div class="producto"><img src="hoodie-blanco.png" alt="Hoodie Blanco" /><h3>Hoodie + Pantalón Blanco</h3></div>
-    <div class="producto"><img src="hoodie-gris.png" alt="Hoodie Gris" /><h3>Hoodie + Pantalón Gris</h3></div>
-    <div class="producto"><img src="hoodie-verde.png" alt="Hoodie Verde" /><h3>Hoodie + Pantalón Verde</h3></div>
-    <div class="producto"><img src="hoodie-rojo.png" alt="Hoodie Rojo" /><h3>Hoodie + Pantalón Rojo</h3></div>
-    <div class="producto"><img src="hoodie-morado.png" alt="Hoodie Morado" /><h3>Hoodie + Pantalón Morado</h3></div>
-    <div class="producto"><img src="hoodie-beige.png" alt="Hoodie Beige" /><h3>Hoodie + Pantalón Beige</h3></div>
-    <div class="producto"><img src="hoodie-azul.png" alt="Hoodie Azul" /><h3>Hoodie + Pantalón Azul</h3></div>
+  <section id="productos" class="p-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="producto text-center">
+      <img src="img/camisa_blanca_beatbot.png" alt="Camisa Blanca BEATBOT" />
+      <p>Camisa Blanca BEATBOT</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/camisa_blanca_dragstylo.png" alt="Camisa Blanca DRAGSTYLO" />
+      <p>Camisa Blanca DRAGSTYLO</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/camisa_blanca_grafkid.png" alt="Camisa Blanca GRAFKID" />
+      <p>Camisa Blanca GRAFKID</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/camisa_blanca_pinkrabbit.png" alt="Camisa Blanca PINKRABBIT" />
+      <p>Camisa Blanca PINKRABBIT</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/camisa_blanca_styloneon.png" alt="Camisa Blanca STYLONEON" />
+      <p>Camisa Blanca STYLONEON</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/camisa_negra_grafkid.png" alt="Camisa Negra GRAFKID" />
+      <p>Camisa Negra GRAFKID</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/camisa_negra_pinkrabbit.png" alt="Camisa Negra PINKRABBIT" />
+      <p>Camisa Negra PINKRABBIT</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/camisa_negra_styloneon.png" alt="Camisa Negra STYLONEON" />
+      <p>Camisa Negra STYLONEON</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_azul.png" alt="Hoodie Azul" />
+      <p>Hoodie Azul STYLOX</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_beige.png" alt="Hoodie Beige" />
+      <p>Hoodie Beige STYLOX</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_blanco.png" alt="Hoodie Blanco" />
+      <p>Hoodie Blanco STYLOX</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_gris.png" alt="Hoodie Gris" />
+      <p>Hoodie Gris STYLOX</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_morado.png" alt="Hoodie Morado" />
+      <p>Hoodie Morado STYLOX</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_negro.png" alt="Hoodie Negro" />
+      <p>Hoodie Negro STYLOX</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_rojo.png" alt="Hoodie Rojo" />
+      <p>Hoodie Rojo STYLOX</p>
+    </div>
+    <div class="producto text-center">
+      <img src="img/hoodie_verde.png" alt="Hoodie Verde" />
+      <p>Hoodie Verde STYLOX</p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 STYLO11. Todos los derechos reservados.</p>
+  <footer class="p-4 mt-10 text-center text-gray-400">
+    © 2025 STYLO11. Todos los derechos reservados.
   </footer>
 </body>
+
 </html>
