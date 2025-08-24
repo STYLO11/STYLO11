@@ -1,206 +1,43 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STYLO11 - Inicio</title>
-  <style>
-    body {
-      margin: 0;
-      background: #111;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    header {
-      background: #000;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00ff00;
-    }
-    h1 {
-      color: #00ff00;
-    }
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-    h2 {
-      font-size: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>STYLO11</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
+<section class="hero">
+  <h2>🔥 STYLO11 🔥</h2>
+  <p class="sub">Diseños urbanos con actitud joven 💎✨</p>
+  <p class="desc">Bienvenido a <span class="resaltado">STYLO11</span>, la marca de ropa con <span class="neon">flow callejero</span> 🚀👕</p>
+</section>
 
-  <main>
-    <h2>Diseños urbanos con actitud joven</h2>
-    <p>Bienvenido a STYLO11, tu marca de ropa con flow callejero 🚀👕</p>
-  </main>
-</body>
-</html>
-
-
-<!-- productos.html -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STYLO11 - Productos</title>
-  <style>
-    body {
-      margin: 0;
-      background: #111;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    header {
-      background: #000;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00ff00;
-    }
-    h1 {
-      color: #00ff00;
-    }
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .item {
-      background: #222;
-      padding: 1rem;
-      border-radius: 12px;
-    }
-    img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    p {
-      margin-top: 0.5rem;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>STYLO11</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Nuestros Productos</h2>
-    <div class="grid">
-      <div class="item">
-        <img src="CAMISA%20BLANCA%20BEATBOT%20STYLONEON.png" alt="Camisa Blanca BEATBOT">
-        <p>Camisa Blanca BEATBOT</p>
-      </div>
-      <div class="item">
-        <img src="HOODIE%20NEGRO%20DE%20STYLOX.png" alt="Hoodie Negro STYLOX">
-        <p>Hoodie Negro STYLOX</p>
-      </div>
-      <div class="item">
-        <img src="PANTALON%20ROJO%20DE%20HOODIE%20STYLOX.png" alt="Pantalón Rojo STYLOX">
-        <p>Pantalón Rojo STYLOX</p>
-      </div>
-      <!-- Agrega más aquí -->
-    </div>
-  </main>
-</body>
-</html>
-
-
-<!-- contacto.html -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STYLO11 - Contacto</title>
-  <style>
-    body {
-      margin: 0;
-      background: #111;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    header {
-      background: #000;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00ff00;
-    }
-    h1 {
-      color: #00ff00;
-    }
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>STYLO11</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Contáctanos</h2>
-    <p>Instagram: @stylo11</p>
-    <p>Email: stylo11@email.com</p>
-  </main>
-</body>
-</html>
+<style>
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #000 40%, #111 100%);
+  border-bottom: 2px solid #00ff99;
+}
+.hero h2 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00ff99, #00ccff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.hero .sub {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #fff;
+  text-shadow: 0 0 10px #00ff99;
+}
+.hero .desc {
+  font-size: 1.2em;
+  color: #ddd;
+}
+.hero .resaltado {
+  color: #00ff99;
+  font-weight: bold;
+}
+.hero .neon {
+  color: #ff00ff;
+  text-shadow: 0 0 8px #ff00ff;
+  font-weight: bold;
+}
+</style>
