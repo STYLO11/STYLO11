@@ -3,24 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STYLO11 - Inicio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>STYLO11</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #000000, #111111);
+      color: white;
+    }
+
+    /* --- NAVBAR --- */
+    header {
+      background: black;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      color: limegreen;
+      font-size: 1.8rem;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: cyan;
+    }
+
+    /* --- SECCIONES --- */
+    section {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: cyan;
+      text-shadow: 0px 0px 10px blue;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #f0f0f0;
+    }
+
+    /* --- PRODUCTOS --- */
+    .productos h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- CONTACTO --- */
+    .contacto {
+      background: #111;
+    }
+  </style>
 </head>
 <body>
-  <!-- Barra de navegación ÚNICA -->
+
+  <!-- NAVBAR -->
   <header>
     <h1>STYLO11</h1>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- Sección de bienvenida -->
-  <section class="hero">
-    <h2>Diseños urbanos con actitud joven</h2>
-    <p>Bienvenido a <span class="resaltado">STYLO11</span>, tu marca de ropa con flow callejero 🚀👕</p>
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <h2>Diseños urbanos con actitud joven 💎✨</h2>
+    <p>Bienvenido a <b style="color:lime;">STYLO11</b>, tu marca de ropa con 
+       <span style="color:deeppink;">flow callejero 🚀👕</span></p>
   </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="CAMISA BLANCA BEATBOT STYLONEON.png" alt="Camisa Blanca BEATBOT">
+        <p>Camisa Blanca BEATBOT</p>
+      </div>
+      <div class="card">
+        <img src="HOODIE NEGRO DE STYLOX.png" alt="Hoodie Negro STYLOX">
+        <p>Hoodie Negro STYLOX</p>
+      </div>
+      <div class="card">
+        <img src="PANTALON ROJO DE HOODIE STYLOX.png" alt="Pantalón Rojo STYLOX">
+        <p>Pantalón Rojo STYLOX</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>📧 contacto@stylo11.com</p>
+    <p>📱 +57 300 123 4567</p>
+    <p>📍 Medellín, Colombia</p>
+  </section>
+
 </body>
 </html>
