@@ -5,228 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>STYLO11</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(180deg, #000000, #111111);
-      color: white;
-    }
-
-    /* Navbar */
-    header {
-      background: #000;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    header h1 {
-      color: limegreen;
-      margin: 0;
-      font-size: 1.8em;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: limegreen;
-    }
-
-    /* Hero section */
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: #111;
-    }
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.1em;
-    }
-
-    /* Productos */
-    .productos {
-      padding: 40px 20px;
-    }
-    .productos h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 30px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      justify-items: center;
-    }
-    .producto {
-      background: #1a1a1a;
-      padding: 15px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
-    }
-    .producto:hover {
-      transform: scale(1.05);
-    }
-    .producto img {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 10px;
-    }
-    .producto h3 {
-      margin-top: 10px;
-      font-size: 1.1em;
-    }
-
-    /* Contacto */
-    footer {
-      background: #000;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
+    body { margin:0; font-family: Arial, sans-serif; background:#000; color:white; }
+    header { background:#000; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; }
+    header h1 { color:limegreen; margin:0; font-size:1.8em; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { color:limegreen; }
+    .hero { text-align:center; padding:60px 20px; background:#111; }
+    .hero h2 { font-size:2em; margin-bottom:10px; }
+    .hero p { font-size:1.1em; }
+    footer { background:#000; padding:20px; text-align:center; margin-top:40px; }
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <h1>STYLO11</h1>
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
   </header>
 
-  <!-- Inicio -->
-  <section id="inicio" class="hero">
+  <section class="hero">
     <h2>Diseños urbanos con actitud joven 💎✨</h2>
     <p>Bienvenido a <strong>STYLO11</strong>, tu marca de ropa con flow callejero 🚀👕</p>
   </section>
 
-  <!-- Productos -->
-  <section id="productos" class="productos">
-    <h2>Nuestros Productos</h2>
-    <div class="grid">
-      <!-- Aquí van TODOS los productos -->
-      <div class="producto">
-        <img src="img/CAMISA BLANCA BEATBOT STYLONEON.png" alt="Camisa Blanca BEATBOT">
-        <h3>Camisa Blanca BEATBOT</h3>
-      </div>
-      <div class="producto">
-        <img src="img/CAMISA BLANCA DRAGSTYLO STYLONEON.png" alt="Camisa Blanca DRAGSTYLO">
-        <h3>Camisa Blanca DRAGSTYLO</h3>
-      </div>
-      <div class="producto">
-        <img src="img/CAMISA BLANCA GRAFKID STYLONEON.png" alt="Camisa Blanca GRAFKID">
-        <h3>Camisa Blanca GRAFKID</h3>
-      </div>
-      <div class="producto">
-        <img src="img/CAMISA BLANCA PINKRABBIT STYLONEON.png" alt="Camisa Blanca PINKRABBIT">
-        <h3>Camisa Blanca PINKRABBIT</h3>
-      </div>
-      <div class="producto">
-        <img src="img/CAMISA NEGRA GRAFKID STYLONEON.png" alt="Camisa Negra GRAFKID">
-        <h3>Camisa Negra GRAFKID</h3>
-      </div>
-      <div class="producto">
-        <img src="img/CAMISA NEGRA PINKRABBIT.png" alt="Camisa Negra PINKRABBIT">
-        <h3>Camisa Negra PINKRABBIT</h3>
-      </div>
-      <div class="producto">
-        <img src="img/CAMISA NEGRA STYLONEON.png" alt="Camisa Negra STYLONEON">
-        <h3>Camisa Negra STYLONEON</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE AZUL DE STYLOX.png" alt="Hoodie Azul STYLOX">
-        <h3>Hoodie Azul STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE BEIGE DE STYLOX.png" alt="Hoodie Beige STYLOX">
-        <h3>Hoodie Beige STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE BLANCO DE STYLOX.png" alt="Hoodie Blanco STYLOX">
-        <h3>Hoodie Blanco STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE GRIS DE STYLOX.png" alt="Hoodie Gris STYLOX">
-        <h3>Hoodie Gris STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE MORADO DE STYLOX.png" alt="Hoodie Morado STYLOX">
-        <h3>Hoodie Morado STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE NEGRO DE STYLOX.png" alt="Hoodie Negro STYLOX">
-        <h3>Hoodie Negro STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE ROJO DE STYLOX.png" alt="Hoodie Rojo STYLOX">
-        <h3>Hoodie Rojo STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/HOODIE VERDE DE STYLOX.png" alt="Hoodie Verde STYLOX">
-        <h3>Hoodie Verde STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON AZUL DE HOODIE STYLOX.png" alt="Pantalón Azul STYLOX">
-        <h3>Pantalón Azul STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON BEIGE DE HOODIE STYLOX.png" alt="Pantalón Beige STYLOX">
-        <h3>Pantalón Beige STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON BLANCO DE HOODIE STYLOX.png" alt="Pantalón Blanco STYLOX">
-        <h3>Pantalón Blanco STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON GRIS DE HOODIE STYLOX.png" alt="Pantalón Gris STYLOX">
-        <h3>Pantalón Gris STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON MORADO DE HOODIE STYLOX.png" alt="Pantalón Morado STYLOX">
-        <h3>Pantalón Morado STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON NEGRO DE HOODIE STYLOX.png" alt="Pantalón Negro STYLOX">
-        <h3>Pantalón Negro STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON ROJO DE HOODIE STYLOX.png" alt="Pantalón Rojo STYLOX">
-        <h3>Pantalón Rojo STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/PANTALON VERDE DE HOODIE STYLOX.png" alt="Pantalón Verde STYLOX">
-        <h3>Pantalón Verde STYLOX</h3>
-      </div>
-      <div class="producto">
-        <img src="img/SHORT BEIGE DE HOODIE STYLOX.png" alt="Short Beige STYLOX">
-        <h3>Short Beige STYLOX</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <footer id="contacto">
-    <p>📧 contacto@stylo11.com</p>
-    <p>📱 +57 300 000 0000</p>
-    <p>📍 Bogotá, Colombia</p>
+  <footer>
+    <p>© 2025 STYLO11 - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
