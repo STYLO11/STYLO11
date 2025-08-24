@@ -1,25 +1,76 @@
-<nav class="navbar">
-  <a href="index.html">Inicio</a>
-  <a href="productos.html">Productos</a>
-  <a href="contacto.html">Contacto</a>
-</nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STYLO11 - Inicio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #000000, #111111);
+      color: white;
+      text-align: center;
+    }
 
-<style>
-  .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    background: black;
-    padding: 15px;
-  }
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: 0.3s;
-  }
-  .navbar a:hover {
-    color: limegreen;
-  }
-</style>
+    /* --- NAVBAR --- */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: black;
+      padding: 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      color: limegreen;
+    }
+
+    /* --- HERO --- */
+    .hero {
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: cyan;
+      text-shadow: 0px 0px 10px blue;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      margin: 20px 0;
+      color: limegreen;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Aquí se inserta el menú -->
+  <div id="navbar"></div>
+
+  <section class="hero">
+    <h1>💧 STYLO11 💧</h1>
+    <h2>Diseños urbanos con actitud joven 💎✨</h2>
+    <p>Bienvenido a <b style="color:lime;">STYLO11</b>, tu marca de ropa con 
+       <span style="color:deeppink;">flow callejero 🚀👕</span></p>
+  </section>
+
+  <script>
+    // Cargar navbar.html en todas las páginas
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
